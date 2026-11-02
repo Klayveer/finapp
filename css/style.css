@@ -185,6 +185,7 @@ button { cursor: pointer; }
 .grid-card > .panel:first-child .panel-head { margin-bottom: 0; }
 
 /* ---------- KPIs ---------- */
+.panel + .kpis { margin-top: 16px; }
 .kpis { display: grid; grid-template-columns: 1.3fr repeat(3, 1fr); gap: 16px; }
 .kpi { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 20px; display: flex; flex-direction: column; gap: 6px; box-shadow: var(--shadow); min-width: 0; }
 .kpi-label { display: flex; align-items: center; gap: 8px; color: var(--text-2); font-size: 13px; font-weight: 500; }
