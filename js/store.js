@@ -114,7 +114,7 @@ const cloud = {
   },
   async signUp(email, password) {
     const c = await client();
-    const data = ok(await c.auth.signUp({ email, password }));
+    const data = ok(await c.auth.signUp({ email, password, options: { emailRedirectTo: location.origin + location.pathname } }));
     if (!data.session) return { needsConfirmation: true };
     return { user: { id: data.user.id, email: data.user.email } };
   },
