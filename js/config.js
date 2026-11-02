@@ -10,6 +10,6 @@
  * segurança vem das políticas RLS do schema.sql.
  */
 export const CONFIG = {
-  SUPABASE_URL: '',
-  SUPABASE_ANON_KEY: '',
+  SUPABASE_URL: 'https://vuxduiizxatkkrmzhjaf.supabase.co',
+  SUPABASE_ANON_KEY: 'sb_publishable_n2E0xjnhltPsqTSnIIqLMQ_cySaZmOU',
 };
