@@ -1,0 +1,1 @@
+{ "type": "module", "private": true, "name": "finapp", "scripts": { "dev": "npx --yes serve -l 5173 ." } }
