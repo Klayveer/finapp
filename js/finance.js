@@ -120,7 +120,10 @@ export function usedLimit(state, card) {
 }
 
 export function invoice(state, card, mk) {
-  const entries = entriesForMonth(state, mk).filter((e) => e.card?.id === card.id);
+  // Na fatura, ordena pela data real da compra (ano/mês/dia), mais recente primeiro.
+  const entries = entriesForMonth(state, mk)
+    .filter((e) => e.card?.id === card.id)
+    .sort((a, b) => b.tx.date.localeCompare(a.tx.date) || (b.tx.createdAt || '').localeCompare(a.tx.createdAt || ''));
   const total = round2(entries.reduce((s, e) => s + e.amount, 0));
   const open = openInvoiceMonth(card);
   const status = mk < open ? 'fechada' : mk === open ? 'aberta' : 'futura';

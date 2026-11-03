@@ -322,7 +322,7 @@ select.input { appearance: none; padding-right: 32px; background-image: url("dat
 .swatch:has(input:checked) { box-shadow: 0 0 0 2px var(--surface), 0 0 0 4px var(--text); }
 
 /* ---------- Cartões ---------- */
-.cc-rail { display: flex; gap: 14px; overflow-x: auto; padding: 4px 4px 14px; margin: 0 -4px 6px; scroll-snap-type: x mandatory; }
+.cc-rail { display: flex; gap: 14px; overflow-x: auto; padding: 10px 8px 18px; margin: -6px -8px 2px; scroll-snap-type: x mandatory; scroll-padding-inline: 8px; }
 .cc {
   flex: none; width: 248px; aspect-ratio: 1.586; border-radius: 16px; border: 0; padding: 16px 18px; color: #fff; text-align: left;
   display: grid; grid-template-rows: auto 1fr auto auto; gap: 4px; position: relative; overflow: hidden; scroll-snap-align: start;
